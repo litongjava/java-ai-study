@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.litongjava</groupId>
+  <artifactId>ai-djl-0.17.0-demo-01</artifactId>
+  <version>1.0</version>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+    <lombok.version>1.18.20</lombok.version>
+    <logback.version>1.2.3</logback.version>
+    <djl.version>0.17.0</djl.version>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback.version}</version>
+    </dependency>
+    <!-- 服务器端推理引擎 -->
+    <dependency>
+      <groupId>ai.djl</groupId>
+      <artifactId>basicdataset</artifactId>
+      <version>${djl.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>ai.djl</groupId>
+      <artifactId>model-zoo</artifactId>
+      <version>${djl.version}</version>
+    </dependency>
+    <!-- MXNet -->
+    <dependency>
+      <groupId>ai.djl.mxnet</groupId>
+      <artifactId>mxnet-model-zoo</artifactId>
+      <version>${djl.version}</version>
+    </dependency>
+
+    <!-- PaddlePaddle -->
+    <dependency>
+      <groupId>ai.djl.paddlepaddle</groupId>
+      <artifactId>paddlepaddle-model-zoo</artifactId>
+      <version>${djl.version}</version>
+    </dependency>
+    <!--opencv-->
+    <dependency>
+      <groupId>ai.djl.opencv</groupId>
+      <artifactId>opencv</artifactId>
+      <version>${djl.version}</version>
+    </dependency>
+  </dependencies>
+</project>
