@@ -14,12 +14,6 @@ import java.nio.file.Paths;
  * 文字检测
  */
 public final class OcrV4Detection {
-
-  private static final Logger logger = LoggerFactory.getLogger(OcrV4Detection.class);
-
-  public OcrV4Detection() {
-  }
-
   /**
    * 中文文本检测
    *
@@ -29,7 +23,7 @@ public final class OcrV4Detection {
     Criteria<Image, NDList> criteria =
       Criteria.builder()
         .optEngine("OnnxRuntime")
-//                        .optModelName("inference")
+        // .optModelName("inference")
         .setTypes(Image.class, NDList.class)
         .optModelPath(Paths.get("models/ch_PP-OCRv4_det_infer/inference.onnx"))
         .optTranslator(new OCRDetectionTranslator(new ConcurrentHashMap<String, String>()))

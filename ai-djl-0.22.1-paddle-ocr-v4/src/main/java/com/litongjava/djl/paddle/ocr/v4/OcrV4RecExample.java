@@ -30,10 +30,6 @@ import java.util.List;
 /**
  * OCR V4模型 文字识别. 支持文本有旋转角度
  * OCR V4 model for text recognition. Supports text with rotation angles.
- *
- * @author Calvin
- * @mail 179209347@qq.com
- * @website www.aias.top
  */
 public final class OcrV4RecExample {
 
